@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Forca do Silvio Santos</title>
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+  <h1>🎤 Forca 🎁</h1>
+
+  <div id="container">
+    <canvas id="forca" width="300" height="300"></canvas>
+
+    <p><strong>Dica:</strong> <span id="dica"></span></p>
+    <p id="palavra-escondida">_ _ _ _</p>
+    <p>Erros restantes: <span id="tentativas">15</span></p>
+
+    <input type="text" id="letra" maxlength="1" placeholder="Letra" />
+    <button onclick="tentarLetra()">Adivinhar</button>
+
+    <p id="mensagem"></p>
+    <button onclick="reiniciarJogo()">🔄 Novo Jogo</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
